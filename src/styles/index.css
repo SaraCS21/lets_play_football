@@ -513,6 +513,18 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.m-6 {
+  margin: 1.5rem;
+}
+
 .mr-5 {
   margin-right: 1.25rem;
 }
@@ -535,6 +547,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-\[10vh\] {
@@ -665,8 +681,24 @@ video {
   padding: 1.75rem;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
 .text-right {
   text-align: right;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-sm {
@@ -692,6 +724,11 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-semibold {
@@ -722,6 +759,10 @@ video {
   color: rgb(138 138 138 / var(--tw-text-opacity));
 }
 
+.text-\[\] {
+  color: ;
+}
+
 .opacity-90 {
   opacity: 0.9;
 }
@@ -735,6 +776,14 @@ video {
 }
 
 @media (min-width: 1280px) {
+  .xl\:absolute {
+    position: absolute;
+  }
+
+  .xl\:bottom-0 {
+    bottom: 0px;
+  }
+
   .xl\:m-8 {
     margin: 2rem;
   }
@@ -827,8 +876,16 @@ video {
     width: 25%;
   }
 
+  .xl\:w-full {
+    width: 100%;
+  }
+
   .xl\:justify-start {
     justify-content: flex-start;
+  }
+
+  .xl\:justify-center {
+    justify-content: center;
   }
 
   .xl\:bg-\[\#085eb1\] {
@@ -854,6 +911,10 @@ video {
 
   .xl\:p-4 {
     padding: 1rem;
+  }
+
+  .xl\:p-10 {
+    padding: 2.5rem;
   }
 
   .xl\:pl-3 {
@@ -918,5 +979,10 @@ video {
   .xl\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .xl\:text-\[\#085eb1\] {
+    --tw-text-opacity: 1;
+    color: rgb(8 94 177 / var(--tw-text-opacity));
   }
 }
