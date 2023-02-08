@@ -1,5 +1,7 @@
 import './styles/index.css'
 import Header from './components/Header'
+import TeamInfo from './components/TeamInfo'
+// import TeamContent from './components/TeamContent'
 
 function App() {
 
@@ -8,8 +10,10 @@ function App() {
       <header>
         <Header/>
       </header>
+      <main>
+        <TeamInfo/>
+      </main>
     </div>
-
   )
 }
 
