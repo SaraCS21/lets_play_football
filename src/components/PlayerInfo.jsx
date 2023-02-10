@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useSearchParams } from "react-router-dom"
 import { Link } from 'react-router-dom';
 
 function PlayerInfo({ team }) {
     const [params] = useSearchParams();
     const namePlayer = params.get("name");
-    const teamPlayers = team.team?.players;
-    // const playerInfo = teamPlayers.find(player => player.name === namePlayer);
+    const teamPlayers = team?.players;
 
+    const [player, setPlayer] = useState({});
+
+    useEffect(() => {
+        if (teamPlayers) {
+            const playerInfo = teamPlayers.find(player => player.name === namePlayer);
+
+            setPlayer(playerInfo)
+        }
+    }, [teamPlayers])
 
     return (
         <h1>hola</h1>
