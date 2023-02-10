@@ -30,8 +30,8 @@ function App() {
         <Header/>
       </header>
       <main>
-        <TeamInfo/>
-        <PlayersInfo/>
+        <TeamInfo team={{team}}/>
+        <PlayersInfo team={{team}}/>
       </main>
       <Footer/>
     </div>
