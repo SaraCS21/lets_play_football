@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 function PlayersInfo({ team }) {
-    const playersInfo = team.team?.players;
+    const playersInfo = team?.players;
 
     return (
         playersInfo ? <div className='w-full flex flex-wrap justify-center items-middle'>
