@@ -5,8 +5,8 @@ import { RiFootballFill } from 'react-icons/ri';
 import { AiOutlineSearch } from 'react-icons/ai';
 
 function Header({page}) {
-    const playersColor = page === "players" ? "activeColor" : "mainColor" ;
-    const teamsColor = page === "teams" ? "activeColor" : "mainColor";
+    const playersActive = page === "players" ? "active" : "" ;
+    const teamsActive = page === "teams" ? "active" : "";
 
     return (
         <nav className='w-full h-[10vh] xl:h-[7vh] flex justify-between'>
@@ -18,11 +18,11 @@ function Header({page}) {
                 </Link>
             </div>
             <div className='w-7/12 xl:w-[90%] flex justify-around xl:justify-start items-center font-semibold text-lg'>
-                <p className={`text-${playersColor} xl:pl-16`}>PLAYERS</p>
-                <p className={`text-${teamsColor} xl:pl-16`}>TEAMS</p>
+                <p id={playersActive} className={'text-mainColor xl:pl-16 cursor-pointer'}>PLAYERS</p>
+                <p id={teamsActive} className={'text-mainColor xl:pl-16 cursor-pointer'}>TEAMS</p>
             </div>
             <div className='w-2/12 xl:w-[5%] flex justify-center items-center border-l-2 border-[#e2ecf6]'>
-                <AiOutlineSearch className='text-mainColor text-xl'/>
+                <AiOutlineSearch className='text-mainColor text-xl cursor-pointer'/>
             </div>
         </nav>
     )

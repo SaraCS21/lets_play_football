@@ -30,7 +30,7 @@ function Home() {
         <TeamInfo team={team}/>
         <PlayersInfo team={team}/>
       </main>
-      <Footer/>
+      <Footer page="teams" />
     </div>
   )
 }

@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#active {
+    color: #ea5e00;
+}
+
+#team {
+    width: 100%;
+}
+
+#players{
+    position: absolute;
+    bottom: 0;
+}
+
+@media (min-width: 1280px) {
+    #team {
+        width: 25%;
+    }
+
+    #player{
+        width: 100%;
+    }
+
+    #playerDiv{
+        width: 33.33%;
+    }
+}

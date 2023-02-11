@@ -28,7 +28,7 @@ function Home() {
                 <Header page="players" />
             </header>
             <PlayerInfo team={team} />
-            <Footer />
+            <Footer page="players" />
         </div>
     )
 }
