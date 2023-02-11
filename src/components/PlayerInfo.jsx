@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { useSearchParams } from "react-router-dom"
 
-import DivInfo from './DivInfo'
-import DataHeader from './DataHeader'
+import { getData } from '../functions/getData'
 
-import { formatBirthday, formatAge, formatFeet } from "../functions/functions"
+import DataHeader from './DataHeader'
+import DataBody from './DataBody'
 
 function PlayerInfo({ team }) {
     const [params] = useSearchParams();
@@ -29,17 +29,8 @@ function PlayerInfo({ team }) {
             </div>
             <section className='w-full p-4 xl:p-0 xl:pl-10 pb-10 xl:pb-20 bg-[#085eb1] text-white'>
                 <DataHeader value={ player } page="players" />
-
                 <div className='w-full h-px bg-white opacity-30'></div>
-
-                <h3 className='w-full mt-3 text-lg xl:text-base font-semibold'>PROFILE</h3>
-                <section className='w-full xl:w-1/4 flex flex-col mt-3'>
-                    <DivInfo name={"BIRTHDAY"} value={formatBirthday(player.birthday)}/>
-                    <DivInfo name={"AGE"} value={`${formatAge(player.birthday)} YEARS`}/>
-                    <DivInfo name={"HEIGHT"} value={`${player.height} CM`}/>
-                    <DivInfo name={"WEIGHT"} value={`${player.weight} KG`}/>
-                    <DivInfo name={"FEET"} value={formatFeet(player.rightFeet)}/>
-                </section>
+                <DataBody datas={getData(player).player} head="PROFILE" />
             </section>
         </section>
     )

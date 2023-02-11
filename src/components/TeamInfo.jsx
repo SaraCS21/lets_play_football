@@ -1,6 +1,9 @@
 import React from 'react'
-import DivInfo from './DivInfo'
+
+import { getData } from "../functions/getData"
+
 import DataHeader from './DataHeader'
+import DataBody from './DataBody'
 
 function TeamInfo({team}) {
     return (
@@ -10,14 +13,8 @@ function TeamInfo({team}) {
             </div>
             <section className='w-full p-4 xl:p-0 xl:pl-10 pb-10 xl:pb-20 bg-[#085eb1] text-white'>
                 <DataHeader value={team} page="teams" />
-
                 <div className='w-full h-px bg-white opacity-30'></div>
-
-                <h3 className='w-full mt-3 text-lg xl:text-base font-semibold'>INFO</h3>
-                <section className='w-full xl:w-1/4 flex flex-col mt-3'>
-                    <DivInfo name={"PLAYERS"} value={team.players?.length}/>
-                    <DivInfo name={"AGE"} value={"35 YEARS"}/>
-                </section>
+                <DataBody datas={getData(team).team} head="INFO" />
             </section>
         </section>
     )
