@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useSearchParams } from "react-router-dom"
 import DivInfo from './DivInfo'
+import {capitalize} from "../functions/functions"
 
 function PlayerInfo({ team }) {
     const [params] = useSearchParams();
@@ -27,7 +28,7 @@ function PlayerInfo({ team }) {
                 <div className='w-full flex justify-between'>
                     <div>
                         <h1 className='font-semibold text-3xl xl:text-2xl'>{player.surname} {player.name}</h1>
-                        <h2 className='font-semibold text-2xl xl:text-xl opacity-70 mb-8'>{player.position}</h2>
+                        <h2 className='font-semibold text-2xl xl:text-xl opacity-70 mb-8'>{capitalize(player.position)}</h2>
                     </div>
                     
                     <p className='text-7xl font-semibold'>{player.number}</p>
