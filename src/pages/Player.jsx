@@ -14,8 +14,6 @@ function Home() {
             const data = await response.json();
             const { team: teamData } = data
 
-            console.log(teamData)
-
             setTeam(teamData)
         }
 

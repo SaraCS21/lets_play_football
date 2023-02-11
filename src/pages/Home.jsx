@@ -14,7 +14,6 @@ function Home() {
             const response = await fetch("../team.json");
             const data = await response.json();
             const { team: teamData } = data
-            console.log(teamData)
 
             setTeam(teamData)
         }
