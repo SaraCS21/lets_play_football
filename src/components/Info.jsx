@@ -1,6 +1,6 @@
 import React from 'react'
 
-function DivInfo({ name, value, page }) {
+function Info({ name, value, page }) {
     const id = page === "player" ? "playerDiv" : "";
 
     return (
@@ -11,4 +11,4 @@ function DivInfo({ name, value, page }) {
     )
 }
 
-export default DivInfo
+export default Info
