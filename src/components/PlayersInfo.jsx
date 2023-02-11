@@ -5,7 +5,7 @@ function PlayersInfo({ team }) {
     const playersInfo = team?.players;
 
     return (
-        playersInfo ? <div className='w-full flex flex-wrap justify-center items-middle'>
+        playersInfo ? <div className='w-full flex flex-wrap items-middle'>
             {playersInfo.map((player => 
                 <section key={player.name} className='w-full xl:w-1/4 p-2 xl:m-8 flex'>
                     <Link to={`player?name=${player.name}`} className="w-full flex">

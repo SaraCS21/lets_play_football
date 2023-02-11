@@ -4,7 +4,6 @@ import { RiFootballFill } from 'react-icons/ri';
 import { AiOutlineSearch } from 'react-icons/ai';
 
 function Header({page}) {
-
     const playersColor = page === "players" ? "#ea5e00" : "#085eb1" ;
     const teamsColor = page === "teams" ? "#ea5e00" : "#085eb1";
 

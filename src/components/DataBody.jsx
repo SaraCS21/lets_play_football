@@ -1,14 +1,14 @@
 import React from 'react'
 import DivInfo from './DivInfo'
 
-function DataHeader({ datas, head }) {
+function DataBody({ datas, head, width = "w-full", xlwidth= "" }) {
     return (
         <>
             <h3 className='w-full mt-3 text-lg xl:text-base font-semibold'>{head}</h3>
-            <section className='w-full xl:w-1/4 flex flex-col mt-3'>
+            <section className={`w-full ${xlwidth} flex flex-wrap flex-row mt-3`}>
                 {
                     datas.map((data =>
-                        <DivInfo name={data.name} value={data.value}/>
+                        <DivInfo name={data.name} value={data.value} width={width}/>
                     ))
                 }
             </section>
@@ -16,7 +16,7 @@ function DataHeader({ datas, head }) {
     )
 }
 
-export default DataHeader
+export default DataBody
 
 
 

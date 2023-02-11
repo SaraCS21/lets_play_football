@@ -19,20 +19,20 @@ function getData(value){
                 "value": formatBirthday(value.birthday)
             },
             {
-                "name": "AGE",
-                "value": `${formatAge(value.birthday)} YEARS`
-            },
-            {
                 "name": "HEIGHT",
                 "value": `${value.height} CM`
             },
             {
-                "name": "WEIGHT",
-                "value": `${value.weight} KG`
-            },
-            {
                 "name": "FEET",
                 "value": formatFeet(value.rightFeet)
+            },
+            {
+                "name": "AGE",
+                "value": `${formatAge(value.birthday)} YEARS`
+            },
+            {
+                "name": "WEIGHT",
+                "value": `${value.weight} KG`
             }
         ]
     }

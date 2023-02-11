@@ -521,24 +521,24 @@ video {
   position: relative;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
-.right-0 {
-  right: 0px;
-}
-
 .bottom-2 {
   bottom: 0.5rem;
 }
 
-.right-2 {
-  right: 0.5rem;
-}
-
 .right-4 {
   right: 1rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .mr-5 {
@@ -553,18 +553,6 @@ video {
   margin-top: 0.25rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
 .flex {
   display: flex;
 }
@@ -577,20 +565,20 @@ video {
   height: 1.8rem;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .h-\[30vh\] {
   height: 30vh;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-px {
   height: 1px;
 }
 
-.h-full {
-  height: 100%;
+.h-20 {
+  height: 5rem;
 }
 
 .min-h-screen {
@@ -633,24 +621,8 @@ video {
   width: 41.666667%;
 }
 
-.w-1\/5 {
-  width: 20%;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-3\/12 {
-  width: 25%;
-}
-
-.w-1\/12 {
-  width: 8.333333%;
-}
-
-.flex-col {
-  flex-direction: column;
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-wrap {
@@ -695,28 +667,19 @@ video {
   background-color: rgb(8 94 177 / var(--tw-bg-opacity));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\] {
-  background-color: ;
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
 }
 
 .p-4 {
@@ -735,23 +698,8 @@ video {
   text-align: right;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
@@ -765,19 +713,24 @@ video {
   line-height: 2rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold {
@@ -790,14 +743,6 @@ video {
 
 .capitalize {
   text-transform: capitalize;
-}
-
-.leading-3 {
-  line-height: .75rem;
-}
-
-.leading-5 {
-  line-height: 1.25rem;
 }
 
 .text-\[\#085eb1\] {
@@ -815,22 +760,12 @@ video {
   color: rgb(138 138 138 / var(--tw-text-opacity));
 }
 
-.text-red-200 {
-  --tw-text-opacity: 1;
-  color: rgb(254 202 202 / var(--tw-text-opacity));
-}
-
-.text-\[\#ea5e00\] {
-  --tw-text-opacity: 1;
-  color: rgb(234 94 0 / var(--tw-text-opacity));
+.opacity-70 {
+  opacity: 0.7;
 }
 
 .opacity-90 {
   opacity: 0.9;
-}
-
-.opacity-70 {
-  opacity: 0.7;
 }
 
 .opacity-30 {
@@ -844,6 +779,26 @@ video {
 
   .xl\:bottom-0 {
     bottom: 0px;
+  }
+
+  .xl\:right-\[1rem\] {
+    right: 1rem;
+  }
+
+  .xl\:right-\[10rem\] {
+    right: 10rem;
+  }
+
+  .xl\:right-8 {
+    right: 2rem;
+  }
+
+  .xl\:right-7 {
+    right: 1.75rem;
+  }
+
+  .xl\:right-6 {
+    right: 1.5rem;
   }
 
   .xl\:m-8 {
@@ -862,12 +817,12 @@ video {
     height: 7vh;
   }
 
-  .xl\:h-24 {
-    height: 6rem;
-  }
-
   .xl\:h-\[20vh\] {
     height: 20vh;
+  }
+
+  .xl\:h-24 {
+    height: 6rem;
   }
 
   .xl\:w-\[5\%\] {
@@ -878,11 +833,11 @@ video {
     width: 90%;
   }
 
-  .xl\:w-1\/4 {
+  .xl\:w-3\/12 {
     width: 25%;
   }
 
-  .xl\:w-3\/12 {
+  .xl\:w-1\/4 {
     width: 25%;
   }
 
@@ -923,9 +878,9 @@ video {
     padding-bottom: 5rem;
   }
 
-  .xl\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+  .xl\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .xl\:text-2xl {
@@ -938,8 +893,8 @@ video {
     line-height: 1.75rem;
   }
 
-  .xl\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
+  .xl\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }

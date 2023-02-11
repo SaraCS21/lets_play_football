@@ -14,7 +14,7 @@ function TeamInfo({team}) {
             <section className='w-full p-4 xl:p-0 xl:pl-10 pb-10 xl:pb-20 bg-[#085eb1] text-white'>
                 <DataHeader value={team} page="teams" />
                 <div className='w-full h-px bg-white opacity-30'></div>
-                <DataBody datas={getData(team).team} head="INFO" />
+                <DataBody datas={getData(team).team} head="INFO" xlwidth='xl:w-1/4' />
             </section>
         </section>
     )
