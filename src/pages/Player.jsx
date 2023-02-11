@@ -10,7 +10,7 @@ function Home() {
 
     useEffect(() => {
         const fetchTeam = async () => {
-            const response = await fetch("/team.json");
+            const response = await fetch("../team.json");
             const data = await response.json();
             const { team: teamData } = data
 
