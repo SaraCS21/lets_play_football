@@ -1,7 +1,7 @@
 import React from 'react'
 import DivInfo from './DivInfo'
 
-function DataBody({ datas, head, width = "w-full", xlwidth= "" }) {
+function DataBody({ datas, head, width, xlwidth }) {
     return (
         <>
             <h3 className='w-full mt-3 text-lg xl:text-base font-semibold'>{head}</h3>

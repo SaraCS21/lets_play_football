@@ -3,9 +3,9 @@ import React from 'react'
 import { capitalize } from "../functions/functions"
 
 function DataHeader({ value, page }) {
-    const h1 = page === "teams" ? value.name : `${value.name} ${value.lastname}`;
-    const h2 = page === "teams" ? value.country : value.position;
-    const p = page === "teams" ? "" : value.number;
+    const h1 = page === "team" ? value.name : `${value.name} ${value.lastname}`;
+    const h2 = page === "team" ? value.country : value.position;
+    const p = page === "team" ? "" : value.number;
 
     return (
         <div className='w-full flex justify-between'>
