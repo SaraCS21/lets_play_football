@@ -1,6 +1,6 @@
 import React from 'react'
 import DivInfo from './DivInfo'
-import {capitalize} from "../functions/functions"
+import DataHeader from './DataHeader'
 
 function TeamInfo({team}) {
     return (
@@ -9,8 +9,7 @@ function TeamInfo({team}) {
                 <img src={team.icon} alt={team.name} className="w-5/12"/>
             </div>
             <section className='w-full p-4 xl:p-0 xl:pl-10 pb-10 xl:pb-20 bg-[#085eb1] text-white'>
-                <h1 className='font-semibold text-3xl xl:text-2xl'>{team.name}</h1>
-                <h2 className='font-semibold text-2xl xl:text-xl opacity-70 mb-8'>{capitalize(team.country)}</h2>
+                <DataHeader value={team} page="teams" />
 
                 <div className='w-full h-px bg-white opacity-30'></div>
 

@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { useSearchParams } from "react-router-dom"
 
 import DivInfo from './DivInfo'
+import DataHeader from './DataHeader'
 
-import { capitalize, formatBirthday, formatAge, formatFeet } from "../functions/functions"
+import { formatBirthday, formatAge, formatFeet } from "../functions/functions"
 
 function PlayerInfo({ team }) {
     const [params] = useSearchParams();
@@ -27,14 +28,7 @@ function PlayerInfo({ team }) {
                 <img src={team.icon} alt={team.name} className="w-2/12 bottom-2 right-4 absolute"/>
             </div>
             <section className='w-full p-4 xl:p-0 xl:pl-10 pb-10 xl:pb-20 bg-[#085eb1] text-white'>
-                <div className='w-full flex justify-between'>
-                    <div>
-                        <h1 className='font-semibold text-3xl xl:text-2xl'>{player.surname} {player.name}</h1>
-                        <h2 className='font-semibold text-2xl xl:text-xl opacity-70 mb-8'>{capitalize(player.position)}</h2>
-                    </div>
-                    
-                    <p className='text-7xl font-semibold'>{player.number}</p>
-                </div>
+                <DataHeader value={ player } page="players" />
 
                 <div className='w-full h-px bg-white opacity-30'></div>
 
