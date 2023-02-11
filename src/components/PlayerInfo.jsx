@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useSearchParams } from "react-router-dom"
 import DivInfo from './DivInfo'
 import {capitalize} from "../functions/functions"
+import moment from 'moment';
 
 function PlayerInfo({ team }) {
     const [params] = useSearchParams();
@@ -17,6 +18,10 @@ function PlayerInfo({ team }) {
             setPlayer(playerInfo)
         }
     }, [teamPlayers])
+
+    const playerBirthday = moment(player.birthday).format("DD MMMM YYYY").toUpperCase();
+    const playerAge = moment().diff(player.birthday, "years", false);
+    const playerFeet = player.rightFeet ? "RIGHT" : "LEFT"
 
     return (
         <section className='w-full xl:bg-[#085eb1] xl:flex xl:p-9'>
@@ -38,11 +43,11 @@ function PlayerInfo({ team }) {
 
                 <h3 className='w-full mt-3 text-lg xl:text-base font-semibold'>PROFILE</h3>
                 <section className='w-full xl:w-1/4 flex flex-col mt-3'>
-                    <DivInfo name={"BIRTHDAY"} value={player.birthday}/>
-                    <DivInfo name={"AGE"} value={"35 YEARS"}/>
+                    <DivInfo name={"BIRTHDAY"} value={playerBirthday}/>
+                    <DivInfo name={"AGE"} value={playerAge}/>
                     <DivInfo name={"HEIGHT"} value={player.height}/>
                     <DivInfo name={"WEIGHT"} value={player.weight}/>
-                    <DivInfo name={"FEET"} value={player.rightFeet}/>
+                    <DivInfo name={"FEET"} value={playerFeet}/>
                 </section>
             </section>
         </section>
