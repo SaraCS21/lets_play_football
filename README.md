@@ -1,10 +1,10 @@
-# High5!
+# Let's Play Football!
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![CodeFactor](https://www.codefactor.io/repository/github/saracs21/lets_play_football/badge)](https://www.codefactor.io/repository/github/saracs21/lets_play_football)
 
 ## Tabla de contenidos
 
-- [High5!](#high5)
+- [Let's Play Football!](#lets-play-football)
   - [Tabla de contenidos](#tabla-de-contenidos)
   - [Tecnologías aplicadas](#tecnologías-aplicadas)
   - [Requerimientos](#requerimientos)
