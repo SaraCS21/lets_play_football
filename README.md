@@ -16,7 +16,7 @@
     <h2>El proyecto</h2>
     <img src="https://i.imgur.com/yMaJEJC.png">
 </div>
-<a id="proyecto"></a>¡
+<a id="proyecto"></a>
 
 El proyecto se trata de un MVP de una web para gestionar diferentes equipos de fútbol y sus jugadores.
 
